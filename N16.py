@@ -1,0 +1,18 @@
+X=int(input())
+n=int(input())
+ok=False
+cont=0
+if(X==0):
+    ok=True
+while(n!=-1):
+    if(n==0):
+        cont+=1
+        if(cont>=X):
+            ok=True
+    else:
+        cont=0
+    n=int(input())
+if(ok==True):
+    print("OK",end="")
+else:
+    print("NO",end="")

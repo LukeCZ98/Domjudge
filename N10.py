@@ -1,0 +1,9 @@
+N=int(input())
+Ninv=''
+ns=str(N)
+cont=len(ns)
+while(cont>0):
+    cont-=1
+    Ninv=Ninv+ns[cont]
+Ninv=int(Ninv)
+print(N-Ninv,end="")

@@ -1,0 +1,29 @@
+s=str(input())
+cont=0
+tappo=False
+if(s=='o'):
+    s=str(input())
+    cont+=1
+    if(s=='k'):
+        cont=0
+        print(cont,end="")
+    else:
+        s=str(input())
+        cont+=1
+else:
+    s=str(input())
+    cont+=1
+    while(tappo==False):
+        if(s=='o'):
+            cont+=1
+            s=str(input())
+            if(s=='k'):
+                cont-=1
+                tappo=True
+            else:
+                cont+=1
+                s=str(input())
+        else:
+            cont+=1
+            s=str(input())
+    print(cont,end="")

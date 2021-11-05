@@ -1,0 +1,11 @@
+x=int(input())
+y=int(input())
+somma=0
+cont=x
+while(cont<y):
+    if(cont%2!=0):
+        somma+=cont
+    cont+=1
+if(y%2!=0):
+    somma+=y
+print(somma,end="")
